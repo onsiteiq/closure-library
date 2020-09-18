@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright 2009 The Closure Library Authors. All Rights Reserved.
 #
@@ -276,7 +276,7 @@ https://github.com/google/closure-compiler/wiki/Managing-Dependencies
         compiler_flags=options.compiler_flags)
 
     logging.info('JavaScript compilation succeeded.')
-    out.write(str(str(compiled_source).encode('utf-8')))
+    out.write(compiled_source.decode('utf-8'))
 
   else:
     logging.error('Invalid value for --output flag.')
